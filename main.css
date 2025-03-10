@@ -15,7 +15,6 @@ body {
   overflow: hidden;
   font-family: serif;
   height: 100%;
-  padding: 4px;
 }
 
 a:hover {
@@ -24,6 +23,7 @@ a:hover {
 }
 
 #hd {
+  padding: 4px;
   z-index: 4;
   position: absolute;
   width: relative;
@@ -33,6 +33,7 @@ a:hover {
 }
 
 #bd {
+  padding: 4px;
   position: absolute;
   font-size: 60pt;
   font-style: italic;
