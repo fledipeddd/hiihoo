@@ -17,7 +17,7 @@ body {
   height: 100%;
 }
 
-a:hover {
+a:hover, #btn:hover {
   font-style: italic;
   cursor: pointer
 }
@@ -25,34 +25,49 @@ a:hover {
 #hd {
   padding: 4px;
   z-index: 4;
-  position: absolute;
+  position: fixed;
   width: relative;
   text-align: center;
-  font-size: 12pt;
+  font-size: 11pt;
   line-height: 1;
+  -webkit-text-stroke: 0.5px rgb(70, 0, 255);
+  text-shadow: 0px 0px 2px rgb(70, 0, 255);
+}
+
+#btn {
+  position: fixed;
+  top: 0;
+  padding-top: 4px;
+  right: 150px;
 }
 
 #bd {
-  padding: 4px;
+  padding: 6px;
   position: absolute;
-  font-size: 60pt;
+  font-size: 40pt;
   font-style: italic;
-  line-height: 0.85;
-  padding-top: 86px;
-  height: calc(100% - 86px);;
+  line-height: 0.95;
+  padding-top: 150px;
+  height: calc(100% - 150px);;
   overflow-y: scroll;
+  -webkit-text-stroke: 1px rgb(70, 0, 255);
+  text-shadow: 0px 0px 3px rgb(70, 0, 255);
 }
 
 @media only screen and (max-width: 768px) {
   #hd {
     width: 100%;
     text-align: center;
-    font-size: 10pt;
+    font-size: 8pt;
     line-height: 1;
   }
 
   #bd {
-    font-size: 30pt;
-    line-height: 0.9;
+    font-size: 25pt;
+    line-height: 1.0;
+  }
+    
+  #btn {
+    right: 4px;
   }
 }
